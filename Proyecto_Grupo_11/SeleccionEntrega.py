@@ -1,8 +1,8 @@
 class SeleccionEntrega:
     """
-    Clase para gestionar la selección de la forma de entrega del pedido.
+    Gestionar la selección de la forma de entrega del pedido.
     """
-
+    
     def __init__(self, numero_pedido):
         self.numero_pedido = numero_pedido
 
@@ -31,6 +31,5 @@ class SeleccionEntrega:
             else:
                 print("Opción inválida. Por favor, ingrese 1 o 2.")
 
-
-prueba = SeleccionEntrega.seleccionar_entrega
+prueba = SeleccionEntrega(9877)
 print(prueba)
