@@ -32,5 +32,5 @@ class SeleccionEntrega:
                 print("Opción inválida. Por favor, ingrese 1 o 2.")
 
 
-prueba = SeleccionEntrega(1452)
+prueba = SeleccionEntrega.seleccionar_entrega
 print(prueba)
