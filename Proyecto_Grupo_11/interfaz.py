@@ -1,15 +1,18 @@
 import tkinter as tk
-from SeleccionEntrega import *
 ventana = tk.Tk()
 ventana.title('Menú desplegable')
 ventana.geometry('400x200')
 barra_menu = tk.Menu(ventana)
-ventana.config(menu=barra_menu)
+ventana.config(menu=barra_menu, bg="blue")
+# def abrir_ventana2():
+#     global ventana2
+#     ventana2 = tk.Tk()
+#     ventana2.title("Tipo de envio")
+#     ventana2.geometry('600x200')
 def abrir_ventana2():
-    global ventana2
-    ventana2 = tk.Tk()
-    ventana2.title("Tipo de envio")
-    ventana2.geometry('600x200')
+    ventana2 = tk.Frame(ventana)
+    ventana2.config(width="400", height="200")
+    ventana2.pack()
 #se crean los botones principales de la barra de menu
 menu_principal = tk.Menu(barra_menu)
 menu_principal2 = tk.Menu(barra_menu)
